@@ -1,6 +1,14 @@
 .inactive {
-	display: none;
 	transition-duration: 2s;
+	display: none;
+}
+
+.active {
+	display: block;
+}
+
+#body {
+	background-color: #1766d4;
 }
 
 #entete {
@@ -8,11 +16,42 @@
 	top: 0px;
 	left: 0px;
 	right: 0px;
-	background-color: red;
+	background-color: rgb(3, 141, 81);
 	padding: 1em;
 	margin: auto;
 }
 
+#navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+#navbar-element {
+	float: left;
+}
+
+#navbar-element a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+#navbar-element a:hover:not(.active) {
+	background-color: #111;
+}
+
+.actif {
+	background-color: rgb(3, 141, 81);
+	color:white;
+}
+.actif :hover{
+	background-color: black;
+}
 #nom {
 	color: whitesmoke;
 	font-size: 3em;
@@ -26,8 +65,8 @@
 #corps {
 	font-size: 1em;
 	text-align: center;
-	width: 500px;
-	background-color: #1766d4;
+	width: fit-content;
+
 }
 
 #gauche {
@@ -35,7 +74,6 @@
 }
 
 #droite {
-	position: fixed;
 	top: 0px;
 	right: 0px;
 	height: 100%;
@@ -53,20 +91,19 @@
 	font-size: 1em;
 	font-weight: bold;
 	color: black;
+	background-color: grey;
 }
 
 #liste {
 	margin-top: 8px;
 	margin-bottom: 8px;
-	height: 50px;
-	width: 300px;
+	font-weight: bold;
 	background-color: white;
+	text-align: center;
+	padding: 0;
 	border-radius: 4px;
 }
-#liste:hover {
-	background-color: #000000;
-	color: white;
-}
+
 
 #sous-liste {
 	text-align: left;

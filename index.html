@@ -7,7 +7,7 @@
 	<meta charset="UTF-8">
 </head>
 
-<body>
+<body id="body">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<div id="entete">
 		<h2 id="nom">
@@ -17,16 +17,21 @@
 			Stagiaire en Intelligence Artificielle
 		</h3>
 	</div>
-
-	<div id="corps" class="container-fluid">
+	<ul id="navbar">
+		<li class="actif" id="navbar-element" onclick="printPage('home')"><a class="active" href="#home">Home</a></li>
+		<li id="navbar-element"><a href="#portfolio" onclick="printPage('portfolio')">Travail Effectué</a></li>
+		<li id="navbar-element"><a href="#contact" onclick="printPage('contact')">Contact</a></li>
+	</ul>
+	<section id='home' class='active'>
+		<div id="corps" class="container-fluid">
 			<div id="titre">
 				Formation
 			</div>
 			<div id="sous-titre">
 				Université Claude Bernard, Lyon.
 			</div>
-			<button type="button" id="liste" onclick="montrer(1)">Première année de master en informatique
-				(2022).</button>
+			<div id="liste">Première année de master en informatique
+				(2022).</div>
 			<div id="1" class="inactive">
 				<ul id="sous-liste">
 					<li class="sous-liste-item">Master 1 spécialité Intelligence Artificielle</li>
@@ -39,7 +44,7 @@
 				</ul>
 			</div>
 
-			<button type="button" id="liste" onclick="montrer(2)">Licence en informatique en juin 2021.</button>
+			<div id="liste">Licence en informatique (2018-2021).</div>
 			<div id="2" class="inactive">
 				<ul id="sous-liste">
 					<li class="sous-liste-item">Plusieurs projets réalisés avec gestion de bases de données</li>
@@ -52,7 +57,7 @@
 				Lycée Jeanne D'arc, Péage de Roussillon (Isère).
 			</div>
 
-			<button type="button" id="liste" onclick="montrer(3)">Obtention du baccalauréat en juin 2018.</button>
+			<div id="liste">Obtention du baccalauréat en juin 2018.</div>
 			<div id="3" class="inactive">
 				<ul id="sous-liste">
 					<li class="sous-liste-item">Baccalauréat scientifique général </li>
@@ -62,11 +67,11 @@
 			</div>
 
 
-			<div id="titre">
+			<h1 id="titre">
 				Expérience
-			</div>
-			<button type="button" id="liste" onclick="montrer(4)">Stage en Développeur Web
-				(Mai à Juillet 2021).</button>
+			</h1>
+			<div id="liste">Stage en Développeur Web
+				(Mai à Juillet 2021).</div>
 			<div id="4" class="inactive">
 				<ul id="sous-liste">
 					<li class="sous-liste-item">Création du site internet de l'entreprise Giuseppe.</li>
@@ -76,8 +81,8 @@
 				</ul>
 			</div>
 
-			<button type="button" id="liste" onclick="montrer(5)">Opérateur de ligne de production
-				(juillet à août 2021 / juillet à août 2020).</button>
+			<div id="liste">Opérateur de ligne de production
+				(juillet à août 2021 / juillet à août 2020).</div>
 			<div id="5" class="inactive">
 				<ul id="sous-liste">
 					<li class="sous-liste-item">Job d'été dans l'entreprise Elivia (usine de transformation de la
@@ -87,10 +92,10 @@
 				</ul>
 			</div>
 
-			<button type="button" id="liste" onclick="montrer(6)">Manutentionnaire
-				(juin à août 2019).</button>
+			<div id="liste">Manutentionnaire
+				(juin à août 2019).</div>
 			<div id="6" class="inactive">
-				<ul  id="sous-liste">
+				<ul id="sous-liste">
 					<li class="sous-liste-item">Job d'été dans l'entreprise Jourdan et Marzes (import/export de
 						l'agroalimentaire), situé à Corbas.</li>
 					<li class="sous-liste-item">Exécution des commandes de fruits et légumes dans un
@@ -98,8 +103,8 @@
 				</ul>
 			</div>
 
-			<button type="button" id="liste" onclick="montrer(7)">Opérateur de saisie
-				(août 2018).</button>
+			<div id="liste">Opérateur de saisie
+				(août 2018).</div>
 			<div id="7" class="inactive">
 				<ul id="sous-liste">
 					<li class="sous-liste-item">Job d'été dans l'entreprise SPIE, situé à Feyzin.</li>
@@ -124,30 +129,36 @@
 				<li class="sous-liste-item">Anglais - B1</li>
 				<li class="sous-liste-item">Français – Langue maternelle</li>
 			</ul>
+		</div>
+	</section>
 
 
 
-			Ici Droite
+	<section id='portfolio' class='inactive'>
+		portfolio
+	</section>
 
-	</div>
-	</nav>
+	<section id='contact' class='inactive'>
+		contact
+
+	</section>
 </body>
 <script>
-	function montrer(id) {
-		var el = document.getElementById(id);
-		const all = document.querySelectorAll(".inactive");
-		Array.from(all).forEach((element, index) => {
-			if (element.id != id) {
-				element.style.display = "none";
-				console.log(element);
-			}
-		});
+	function printPage(page) {
+		oldPage = location.hash.substr(1);
+		var list = $("section");
+		console.log(list)
+		for (let item of list) {
+			$(item).attr('class', 'inactive');
+		}
+		if (page == "home") {
+			console.log(page);
+		}
 
-		if (el.style.display != "none") el.style.display = "none";
-		else el.style.display = "block";
+		$('#' + page).attr('class', 'active container');
 	}
-</script>
 
+</script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
 	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="cv.css">
