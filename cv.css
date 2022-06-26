@@ -4,12 +4,10 @@
 }
 
 #entete {
-
+	text-align: center;
 	top: 0px;
 	left: 0px;
 	right: 0px;
-	width: auto;
-	height: auto;
 	background-color: red;
 	padding: 1em;
 	margin: auto;
@@ -27,6 +25,9 @@
 
 #corps {
 	font-size: 1em;
+	text-align: center;
+	width: 500px;
+	background-color: #1766d4;
 }
 
 #gauche {
@@ -44,16 +45,19 @@
 #titre {
 	font-size: 1.5em;
 	font-weight: bold;
+	color: whitesmoke;
+	background-color: #000000;
 }
 
 #sous-titre {
 	font-size: 1em;
 	font-weight: bold;
+	color: black;
 }
 
 #liste {
-	text-align: left;
-	margin-top: 4px;
+	margin-top: 8px;
+	margin-bottom: 8px;
 	height: 50px;
 	width: 300px;
 	background-color: white;
@@ -65,5 +69,9 @@
 }
 
 #sous-liste {
+	text-align: left;
+	margin-top: 8px;
+	border-radius: 15px;
 	font-size: 1em;
+	background-color: rgb(255, 255, 255);
 }
