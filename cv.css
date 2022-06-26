@@ -1,19 +1,69 @@
 .inactive {
 	display: none;
+	transition-duration: 2s;
 }
 
 #entete {
-	position: absolute;
+
 	top: 0px;
 	left: 0px;
 	right: 0px;
-	width: 100%;
-	height: 200px;
-	z-index: -1;
+	width: auto;
+	height: auto;
+	background-color: red;
+	padding: 1em;
+	margin: auto;
 }
 
-#corps {}
+#nom {
+	color: whitesmoke;
+	font-size: 3em;
+}
 
-#gauche {}
+#objectif {
+	color: whitesmoke;
+	font-size: 1em;
+}
 
-#droite {}
+#corps {
+	font-size: 1em;
+}
+
+#gauche {
+	background-color: whitesmoke;
+}
+
+#droite {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	background-color: blue;
+}
+
+#titre {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#sous-titre {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#liste {
+	text-align: left;
+	margin-top: 4px;
+	height: 50px;
+	width: 300px;
+	background-color: white;
+	border-radius: 4px;
+}
+#liste:hover {
+	background-color: #000000;
+	color: white;
+}
+
+#sous-liste {
+	font-size: 1em;
+}
