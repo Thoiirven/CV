@@ -25,22 +25,51 @@
 			<li class="actif" id="navbar-element" onclick="printPage('home')"><a class="active" href="#home">Home</a>
 			</li>
 			<li id="navbar-element"><a href="#portfolio" onclick="printPage('portfolio')">Travail Effectué</a></li>
-			<li id="navbar-element"><a href="#a-propos" onclick="printPage('a-propos')">A-propos de moi</a></li>
+			<li id="navbar-element"><a href="#parcours" onclick="printPage('parcours')">Mon parcours</a></li>
 			<li id="navbar-element"><a href="#competence" onclick="printPage('competence')">Compétences</a></li>
 		</ul>
 	</div>
 
 	<section id='home' class='active'>
-		<div id="corps" class="container-fluid">
-
-
-
-
+		<div class="container">
+			<div id="left">
+				<h1>Salutations à vous !</h1>
+				<p>Je me présente, Christophe, étudiant en master informatique. Le parcours que j'ai choisi se
+					spécialise dans l'intelligence artificielle. Vous voilà sur mon site internet, une vitrine du
+					travail que j'ai accomplis, mais aussi une vitrine sur ma personne. Je vous laisse découvrir toutes
+					ces informations à vos aises.</p>
+			</div>
+			<div id="right">
+				<ul>
+					<li href="#portfolio" onclick="printPage('portfolio')">
+						<img src="travail.png" alt="">
+						<span>
+							<strong>Travail Effectué</strong>
+							<p>Un bref étalage du travail que j'ai effectué en relation avec l'intelligence artificielle
+							</p>
+						</span>
+					</li>
+					<li href="#parcours" onclick="printPage('parcours')">
+						<img src="formation.webp" alt="">
+						<span>
+							<strong>Mon parcours</strong>
+							<p>Une liste de mes expériences tant soient-elles professionnelles que scolaires</p>
+						</span>
+					</li>
+					<li href="#competence" onclick="printPage('competence')">
+						<img src="competence.png" alt="">
+						<span>
+							<strong>Mes compétences</strong>
+							<p>Vous retrouverez ici mes compétences acquises durant mes différents parcours</p>
+						</span>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</section>
 
 
-	<section id="a-propos" class='inactive'>
+	<section id="parcours" class='inactive'>
 		<div id="corps" class="container-fluid">
 			<div id="titre">
 				<h2>Formation</h2>
