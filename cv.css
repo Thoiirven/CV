@@ -8,37 +8,50 @@
 }
 
 #body {
+	font-family: serif;
 	background-color: #1766d4;
 }
 
 #entete {
 	text-align: center;
+	font-family: Georgia, serif;
 	top: 0px;
 	left: 0px;
 	right: 0px;
 	background-color: rgb(3, 141, 81);
-	padding: 1em;
+	padding: 4em;
 	margin: auto;
+	text-align: center;
 }
-
+#mail {
+	color: #fddc32;
+}
 #navbar {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+	display: flex;
+	justify-content: center;
 	background-color: #333;
 }
 
+#navbar ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: hidden;
+}
+
 #navbar-element {
+	margin: 0;
+	padding: 0;
 	float: left;
+	text-decoration: none;
 }
 
 #navbar-element a {
-	display: block;
 	color: white;
-	text-align: center;
-	padding: 14px 16px;
 	text-decoration: none;
+	padding: 10px 20px;
+	display: block;
+	text-align: center
 }
 
 #navbar-element a:hover:not(.active) {
@@ -95,6 +108,7 @@
 	font-size: 1em;
 	font-weight: bold;
 	color: black;
+	padding: 10px;
 	background-color: grey;
 }
 
@@ -111,8 +125,10 @@
 
 
 #sous-liste {
+	border: solid black;
 	text-align: left;
 	margin-top: 8px;
+	padding: 30px;
 	border-radius: 15px;
 	font-size: 1em;
 	background-color: rgb(255, 255, 255);
@@ -121,17 +137,17 @@
 #video {
 	display: flex;
 	flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+	align-items: center;
+	justify-content: center;
 	margin: auto;
 	height: auto;
 }
 
 #titre2 {
-    display: flex;
+	display: flex;
 	flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+	align-items: center;
+	justify-content: center;
 	background-color: white;
 	color: black;
 	border-radius: 10px;
@@ -140,3 +156,54 @@
 	padding: 1em;
 	margin: 1em;
 }
+
+/* essaie cercle */
+
+  
+  .row {
+	margin-left: auto;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex: wrap;
+	margin-right: auto;
+	max-width: 80em;
+	padding: 1em;
+  }
+  
+  /*** RADIAL PROGRESS ***/  
+  svg.radial-progress {
+	height: auto;
+	max-width: 200px;
+	padding: 1em;
+	transform: rotate(-90deg);
+	width: 100%;
+  }
+  
+  svg.radial-progress circle {
+	fill: rgba(0,0,0,0);
+	stroke: #fff;
+	stroke-dashoffset: 219.91148575129; /* Circumference */
+	stroke-width: 10;
+  }
+  
+  svg.radial-progress circle.incomplete { opacity: 0.25; }
+  
+  svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; /* Circumference */ }
+  
+  svg.radial-progress text {
+	fill: #fff;
+	font: 400 1em/1 'Oswald', sans-serif;
+	text-anchor: middle;
+  }
+  
+  /*** couleurs cercles ***/
+  svg.radial-progress:nth-of-type(6n+1) circle { stroke: #a2ed56; }
+  svg.radial-progress:nth-of-type(6n+2) circle { stroke: #83e4e2; }
+  svg.radial-progress:nth-of-type(6n+3) circle { stroke: #fd6470; }
+  svg.radial-progress:nth-of-type(6n+4) circle { stroke: #fca858; }
+  svg.radial-progress:nth-of-type(6n+5) circle { stroke: #fddc32; }
+  svg.radial-progress:nth-of-type(6n+6) circle { stroke: #c732fd; }
+  svg.radial-progress:nth-of-type(6n+7) circle { stroke: #00530e; }
+  svg.radial-progress:nth-of-type(6n+8) circle { stroke: #ff9e01; }

@@ -16,13 +16,31 @@
 		<h3 id="objectif">
 			Stagiaire en Intelligence Artificielle
 		</h3>
+		<a id="mail" href="mailto::christophe.marrel@gmail.com">christophe.marrel@gmail.com</a>
+			
+		
 	</div>
-	<ul id="navbar">
-		<li class="actif" id="navbar-element" onclick="printPage('home')"><a class="active" href="#home">Home</a></li>
-		<li id="navbar-element"><a href="#portfolio" onclick="printPage('portfolio')">Travail Effectué</a></li>
-		<li id="navbar-element"><a href="#contact" onclick="printPage('contact')">Contact</a></li>
-	</ul>
+	<div id="navbar">
+		<ul>
+			<li class="actif" id="navbar-element" onclick="printPage('home')"><a class="active" href="#home">Home</a>
+			</li>
+			<li id="navbar-element"><a href="#portfolio" onclick="printPage('portfolio')">Travail Effectué</a></li>
+			<li id="navbar-element"><a href="#a-propos" onclick="printPage('a-propos')">A-propos de moi</a></li>
+			<li id="navbar-element"><a href="#competence" onclick="printPage('competence')">Compétences</a></li>
+		</ul>
+	</div>
+
 	<section id='home' class='active'>
+		<div id="corps" class="container-fluid">
+
+
+
+
+		</div>
+	</section>
+
+
+	<section id="a-propos">
 		<div id="corps" class="container-fluid">
 			<div id="titre">
 				Formation
@@ -113,16 +131,6 @@
 				</ul>
 			</div>
 			<div id="titre">
-				Compétences
-			</div>
-			<ul id="sous-liste">
-				<li class="sous-liste-item">Initié aux techniques de l’intelligence artificielle</li>
-				<li class="sous-liste-item">Maîtrise système Linux et Windows</li>
-				<li class="sous-liste-item">Langages C, C++, JS, SQL, Datalog, Prolog, Python, Java</li>
-				<li class="sous-liste-item">Gestion de projet</li>
-			</ul>
-
-			<div id="titre">
 				Langues
 			</div>
 			<ul id="sous-liste">
@@ -132,11 +140,68 @@
 		</div>
 	</section>
 
+	<section id="competence">
+		<!-- essaie de cercle -->
+		<div class="row">
+			<svg class="radial-progress" data-percentage="92" viewBox="0 0 80 80">
+				<circle class="incomplete" cx="40" cy="40" r="35"></circle>
+				<circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+				<text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">C++</text>
+
+			</svg> <svg class="radial-progress" data-percentage="85" viewBox="0 0 80 80">
+				<circle class="incomplete" cx="40" cy="40" r="35"></circle>
+				<circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 147.3406954533613;"></circle>
+				<text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">Python</text>
+
+			</svg> <svg class="radial-progress" data-percentage="70" viewBox="0 0 80 80">
+				<circle class="incomplete" cx="40" cy="40" r="35"></circle>
+				<circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 63.774330867872806;"></circle>
+				<text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">C</text>
+
+			</svg> <svg class="radial-progress" data-percentage="85" viewBox="0 0 80 80">
+				<circle class="incomplete" cx="40" cy="40" r="35"></circle>
+				<circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 167.13272917097697;"></circle>
+				<text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">JS</text>
+
+			</svg> <svg class="radial-progress" data-percentage="90" viewBox="0 0 80 80">
+				<circle class="incomplete" cx="40" cy="40" r="35"></circle>
+				<circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 0;"></circle>
+				<text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">SQL</text>
+
+			</svg> <svg class="radial-progress" data-percentage="80" viewBox="0 0 80 80">
+				<circle class="incomplete" cx="40" cy="40" r="35"></circle>
+				<circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 219.91148575129;"></circle>
+				<text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">Datalog</text>
+			</svg>
+			</svg> <svg class="radial-progress" data-percentage="72" viewBox="0 0 80 80">
+				<circle class="incomplete" cx="40" cy="40" r="35"></circle>
+				<circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 58;"></circle>
+				<text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">Prolog</text>
+			</svg>
+			</svg> <svg class="radial-progress" data-percentage="84" viewBox="0 0 80 80">
+				<circle class="incomplete" cx="40" cy="40" r="35"></circle>
+				<circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 42;"></circle>
+				<text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">Java</text>
+			</svg>
+		</div>
+		</div>
+		<div id="corps" class="container-fluid">
 
 
+			<div id="titre">
+				Compétences
+			</div>
+			<ul id="sous-liste">
+				<li class="sous-liste-item">Initié aux techniques de l’intelligence artificielle</li>
+				<li class="sous-liste-item">Maîtrise système Linux et Windows</li>
+				<li class="sous-liste-item">Gestion de projet</li>
+			</ul>
+		</div>
+	</section>
 	<section id='portfolio' class='inactive'>
-		<div id = "sous-titre">
-			Dans cette partie vous pouvez observer trois des projets que j'ai pu réaliser durant mes études. Si vous avez quelques questions sur la création de ces différents
+		<div id="sous-titre">
+			Dans cette partie vous pouvez observer trois des projets que j'ai pu réaliser durant mes études. Si vous
+			avez quelques questions sur l'implémentation de ces différents
 			projets, n'hésitez pas à me contacter.
 		</div>
 		<a id="titre2">
@@ -144,12 +209,13 @@
 		</a>
 		<div id=video>
 			<video width="50%" height="auto" onclick="this.paused ? this.play() : this.pause();" muted>
-				<source src="taquin.mp4" type="video/mp4">				
+				<source src="taquin.mp4" type="video/mp4">
 			</video>
 		</div>
 
 		<a id="titre2">
-			Simulation d'une propagation de virus avec plusieurs paramètres pris en compte, démonstration sur la vidéo en dessous. Cliquez dessus.
+			Simulation d'une propagation de virus avec plusieurs paramètres pris en compte, démonstration sur la vidéo
+			en dessous. Cliquez dessus.
 		</a>
 		<div id=video>
 			<video width="100%" height="auto" onclick="this.paused ? this.play() : this.pause();" muted>
@@ -158,7 +224,8 @@
 		</div>
 
 		<a id="titre2">
-			Logiciel éducatif sur l'apprentissage de la langue française avec comme calcul de la difficulté d'un mot, le calcul du bigramme pour tout les mots de la langue française
+			Logiciel éducatif sur l'apprentissage de la langue française avec comme calcul de la difficulté d'un mot, le
+			calcul du bigramme pour tout les mots de la langue française
 			, démonstration sur la vidéo en dessous. Cliquez dessus.
 		</a>
 		<div id=video>
@@ -169,29 +236,46 @@
 
 	</section>
 
-	<section id='contact' class='inactive'>
-		contact
-
-	</section>
 </body>
 <script>
 	function printPage(page) {
+
 		oldPage = location.hash.substr(1);
 		var list = $("section");
-		console.log(list)
 		for (let item of list) {
 			$(item).attr('class', 'inactive');
 		}
-		if (page == "home") {
-			console.log(page);
-		}
-
+		if(page=="competence")animationCercle();
 		$('#' + page).attr('class', 'active container');
 	}
 
 </script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
 	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script>
+	function animationCercle() {
+		$(function () {
+			// Remove svg.radial-progress .complete inline styling
+			$('svg.radial-progress').each(function (index, value) {
+				$(this).find($('circle.complete')).removeAttr('style');
+			});
+			// Activate progress animation on scroll
+			$('svg.radial-progress').each(function (index, value) {
+				// Get percentage of progress
+				percent = $(value).data('percentage');
+				// Get radius of the svg's circle.complete
+				radius = $(this).find($('circle.complete')).attr('r');
+				// Get circumference (2πr)
+				circumference = 2 * Math.PI * radius;
+				// Get stroke-dashoffset value based on the percentage of the circumference
+				strokeDashOffset = circumference - ((percent * circumference) / 100);
+				// Transition progress
+				$(this).find($('circle.complete')).animate({ 'stroke-dashoffset': strokeDashOffset }, 1800);
+			});
+		});
+	}
+</script>
 <link rel="stylesheet" type="text/css" href="cv.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
