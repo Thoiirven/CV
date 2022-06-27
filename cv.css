@@ -96,11 +96,13 @@
 
 #sous-titre {
 	font-size: 1em;
+	box-shadow: 4.5px 4.5px 4.5px black;
 	font-weight: bold;
 	color: black;
 	padding: 10px;
 	border: solid #000000;
-	margin: 1%;
+	margin-bottom: 4em;
+	margin-top: 2em;
 	background-color: rgb(181, 181, 181);
 }
 
