@@ -86,11 +86,10 @@
 
 #corps {
 	text-align: center;
-	width: fit-content;
-
 }
 
 #titre {
+	padding: 20px;
 	margin-bottom: 10em;
 	margin-top: 2em;
 	border: solid black 7px;
@@ -98,9 +97,15 @@
 }
 
 #titre h2 {
+	height: 1.5em;
+	border-bottom: solid;
 	font-size: 2em;
 	font-weight: bold;
+	position : sticky;
+	background-color: rgb(255, 133, 133);
+	top : 0;
 	color: black;
+	border-radius: 10px;
 	padding: 4 em;
 
 }
@@ -135,7 +140,7 @@
 #sous-liste {
 	text-align: left;
 	color: white;
-	background-color: rgb(3, 141, 81);
+	background-color: rgb(24, 37, 131);
 	box-shadow: 4.5px 4.5px 4.5px black, -4.5px -4.5px 4.5px black;
 	font-weight: 0;
 	margin-top: 8px;
@@ -315,4 +320,14 @@ svg.radial-progress:nth-of-type(6n+8) circle {
 #home ul li:hover {
 	transform: translateY(40px) rotateY(0deg) rotateX(15deg) scale(1);
 	z-index: 3;
+}
+
+#portfolio h2 {
+	font-size: 1.5em;
+	box-shadow: 4.5px 4.5px 4.5px black;
+	font-weight: bold;
+	color: black;
+	padding: 10px;
+	border: solid #000000;
+	background-color: rgb(181, 181, 181);
 }

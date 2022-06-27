@@ -24,9 +24,9 @@
 		<ul>
 			<li class="actif" id="navbar-element" onclick="printPage('home')"><a class="active" href="#home">Home</a>
 			</li>
-			<li id="navbar-element"><a href="#portfolio" onclick="printPage('portfolio')">Travail Effectué</a></li>
-			<li id="navbar-element"><a href="#parcours" onclick="printPage('parcours')">Mon parcours</a></li>
-			<li id="navbar-element"><a href="#competence" onclick="printPage('competence')">Compétences</a></li>
+			<li id="navbar-element"><a href="#" onclick="printPage('portfolio')">Travail Effectué</a></li>
+			<li id="navbar-element"><a href="#" onclick="printPage('parcours')">Mon parcours</a></li>
+			<li id="navbar-element"><a href="#" onclick="printPage('competence')">Compétences</a></li>
 		</ul>
 	</div>
 
@@ -34,9 +34,11 @@
 		<div class="container">
 			<div id="left">
 				<h1>Salutations à vous !</h1>
-				<p>Je me présente, Christophe, étudiant en master informatique. Le parcours que j'ai choisi se
+				<p>Je suis Christophe, un étudiant en master informatique. Le parcours que j'ai choisi se
 					spécialise dans l'intelligence artificielle. Vous voilà sur mon site internet, une vitrine du
-					travail que j'ai accomplis, mais aussi une vitrine sur ma personne. Je vous laisse découvrir toutes
+					travail que j'ai accomplis, mais aussi une vitrine sur ma personne.
+				</p>
+				<p>Je vous laisse découvrir toutes
 					ces informations à vos aises.</p>
 			</div>
 			<div id="right">
@@ -72,57 +74,57 @@
 	<section id="parcours" class='inactive'>
 		<div id="corps" class="container-fluid">
 			<div id="titre">
+				<div></div>
 				<h2>Formation</h2>
-
 				<div id="sous-titre">
 					Université Claude Bernard, Lyon.
-
-					<div id="liste">Première année de master en informatique
-						(2022).
-						<div>
-							<ul id="sous-liste">
-								<li class="sous-liste-item">Master 1 spécialité Intelligence Artificielle</li>
-								<li class="sous-liste-item">Projet de simulation de contamination virale en groupe de 4
-								</li>
-								<li class="sous-liste-item">Création d’un logiciel pédagogique autour de la langue
-									française
-								</li>
-								<li class="sous-liste-item">Résolution du problème du taquin</li>
-								<li class="sous-liste-item">Utilisation du réseau de neurones de Kohonen</li>
-								<li class="sous-liste-item">Maîtrise du langage Datalog</li>
-							</ul>
-						</div>
-					</div>
-
-					<div id="liste">Licence en informatique (2018-2021).
-
+				</div>
+				<div id="liste">Première année de master en informatique
+					(2022).
+					<div>
 						<ul id="sous-liste">
-							<li class="sous-liste-item">Plusieurs projets réalisés avec gestion de bases de données</li>
-							<li class="sous-liste-item">Projets d'ergonomie pour les pages web</li>
-							<li class="sous-liste-item">Projet respectant le modèle MVC</li>
-							<li class="sous-liste-item">Utilisation du langage Prolog</li>
+							<li class="sous-liste-item">Master 1 spécialité Intelligence Artificielle</li>
+							<li class="sous-liste-item">Projet de simulation de contamination virale en groupe de 4
+							</li>
+							<li class="sous-liste-item">Création d’un logiciel pédagogique autour de la langue
+								française
+							</li>
+							<li class="sous-liste-item">Résolution du problème du taquin</li>
+							<li class="sous-liste-item">Utilisation du réseau de neurones de Kohonen</li>
+							<li class="sous-liste-item">Maîtrise du langage Datalog</li>
 						</ul>
-
 					</div>
 				</div>
+
+				<div id="liste">Licence en informatique (2018-2021).
+
+					<ul id="sous-liste">
+						<li class="sous-liste-item">Plusieurs projets réalisés avec gestion de bases de données</li>
+						<li class="sous-liste-item">Projets d'ergonomie pour les pages web</li>
+						<li class="sous-liste-item">Projet respectant le modèle MVC</li>
+						<li class="sous-liste-item">Utilisation du langage Prolog</li>
+					</ul>
+
+				</div>
+
 				<div id="sous-titre">
 					Lycée Jeanne D'arc, Péage de Roussillon (Isère).
-
-
-					<div id="liste">Obtention du baccalauréat en juin 2018.
-
-						<ul id="sous-liste">
-							<li class="sous-liste-item">Baccalauréat scientifique général </li>
-							<li class="sous-liste-item">Baccalauréat spécialité mathématique</li>
-							<li class="sous-liste-item">Mention assez bien</li>
-						</ul>
-					</div>
 				</div>
+
+				<div id="liste">Obtention du baccalauréat en juin 2018.
+
+					<ul id="sous-liste">
+						<li class="sous-liste-item">Baccalauréat scientifique général </li>
+						<li class="sous-liste-item">Baccalauréat spécialité mathématique</li>
+						<li class="sous-liste-item">Mention assez bien</li>
+					</ul>
+				</div>
+
 			</div>
 
 			<div id="titre">
+				<div></div>
 				<h2>Expérience</h2>
-
 				<div id="liste">Stage de Développeur Web
 					(Mai à Juillet 2021).
 					<div>
@@ -251,13 +253,14 @@
 			<h2>Résolution du taquin avec un système multi-agent.</h2>
 
 			<div id=video>
-				
-				<video width="50%" height="auto" style="z-index:1"onclick="this.paused ? this.play(): this.pause();" muted>
+
+				<video width="50%" height="auto" style="z-index:1" onclick="this.paused ? this.play(): this.pause();"
+					muted>
 					<source src="taquin.mp4" type="video/mp4">
 				</video>
 				<div id="1">
 					<h1>Cliquez pour lancer !</h1>
-				</div> 
+				</div>
 			</div>
 		</div>
 
@@ -270,7 +273,7 @@
 				</video>
 				<div id="2">
 					<h1>Cliquez pour lancer !</h1>
-				</div> 
+				</div>
 			</div>
 		</div>
 		<div id="liste">
@@ -284,7 +287,7 @@
 				</video>
 				<div id="3">
 					<h1>Cliquez pour lancer !</h1>
-				</div> 
+				</div>
 			</div>
 		</div>
 
@@ -300,11 +303,11 @@
 		if (page == "competence") animationCercle();
 		$('#' + page).attr('class', 'active container');
 	}
-	function showTexte(id){
+	function showTexte(id) {
 		ele = document.getElementById(id);
 		$(ele).attr('class', 'active')
 	}
-	function hideTexte(id){
+	function hideTexte(id) {
 		ele = document.getElementById(id);
 		$(ele).attr('class', 'inactive')
 	}
@@ -314,8 +317,60 @@
 	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 <script>
+	window.onscroll = function () { scrollFunction() };
+	function isElementInViewport(el) {
+		// Special bonus for those using jQuery
+		if (typeof jQuery === "function" && el instanceof jQuery) {
+			el = el[0];
+		}
+		var rect = el.getBoundingClientRect();
+		return (
+			rect.top >= 0 &&
+			rect.left >= 0 &&
+			rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
+			rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
+		);
+	}
+	function scrollFunction() {
+
+		var element = document.querySelectorAll("#titre");
+		var estPremier = true;
+		element.forEach(function (ele) {
+			if (estPremier) {
+				ele2 = $(ele).find("h2")[0];
+				console.log($(ele2).parent())
+				divListe = ele.querySelectorAll("div");
+				var estVisible = false
+				if (isElementInViewport(ele)) {
+					$(ele2).parent().css("position", "relative", "top", " ");
+					estPremier = true
+					console.log("The paragraph  is visible.");
+				} else {
+					divListe.forEach(function (d) {
+						if (isElementInViewport(d)) estVisible = true;
+					})
+					if (estVisible && !isElementInViewport(divListe[0])) {
+						$(ele2).parent().css("position", "sticky", "top", 0);
+						estPremier = false
+					} else {
+						$(ele2).parent().css("position", "relative", "top", " ");
+						estPremier = true
+					}
+				}
+			}
+		});
+
+		// if (document.documentElement.scrollTop > 200 &&document.documentElement.scrollTop < 900) {
+		// 	$(element).css("position","fixed","top", "-100px");
+		// 	console.log("eeee")
+		// }
+		// else {
+		// 	console.log("aaj")
+		// 	$(element).css("position","relative","top", "none");
+		// }
+	}
 	$('video').click(
-		function(){id = $(this).parent().find("div")[0].id, console.log(id),this.paused? showTexte(id): hideTexte(id);});
+		function () { id = $(this).parent().find("div")[0].id, console.log(id), this.paused ? showTexte(id) : hideTexte(id); });
 
 	function animationCercle() {
 		$(function () {
