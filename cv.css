@@ -8,8 +8,13 @@
 }
 
 #body {
+	background: linear-gradient(200deg, rgb(0, 0, 255), rgba(0, 0, 255, 0.526));
 	font-family: serif;
-	background-color: #1766d4;
+    margin: 0;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 #entete {
@@ -156,7 +161,7 @@
     position: absolute;
     text-align: center;
     font-family: Georgia;
-	left :40%;
+	left :30%;
     top: 30%;
     color: white;
 
