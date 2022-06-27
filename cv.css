@@ -23,7 +23,7 @@
 	top: 0px;
 	left: 0px;
 	right: 0px;
-	background-color: rgb(3, 141, 81);
+	background-color:rgba(0, 0, 255, 0.526);
 	padding: 4em;
 	margin: auto;
 	text-align: center;
@@ -294,7 +294,7 @@ svg.radial-progress:nth-of-type(6n+8) circle {
 
 #home ul li:nth-child(1) {
 	color: #fff;
-	background-image: linear-gradient(135deg, #a3e87b, #10f700);
+	background-image: linear-gradient(135deg, #a3e87b, #189e00);
 	top: -112px;
 	z-index: 2;
 }
