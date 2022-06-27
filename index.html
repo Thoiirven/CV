@@ -247,19 +247,18 @@
 		</div>
 	</section>
 	<section id='portfolio' class='inactive'>
-		<div id="sous-titre">
-			Dans cette partie vous pouvez observer trois des projets que j'ai pu réaliser durant mes études. Pour lancer
-			les vidéos il suffit de cliquer dessus. Si vous
-			avez quelques questions sur l'implémentation de ces différents
-			projets, n'hésitez pas à me contacter.
-		</div>
 		<div id="liste">
 			<h2>Résolution du taquin avec un système multi-agent.</h2>
 
 			<div id=video>
-				<video width="50%" height="auto" onclick="this.paused ? this.play() : this.pause();" muted>
+				
+				<video width="50%" height="auto" style="z-index:1"onclick="this.paused ? this.play(): this.pause();" muted>
 					<source src="taquin.mp4" type="video/mp4">
+					
 				</video>
+				<div id="1">
+					<h1>Cliquez pour lancer !</h1>
+				</div> 
 			</div>
 		</div>
 
@@ -270,6 +269,9 @@
 				<video width="100%" height="auto" onclick="this.paused ? this.play() : this.pause();" muted>
 					<source src="VideoVirus.mp4" type="video/mp4">
 				</video>
+				<div id="2">
+					<h1>Cliquez pour lancer !</h1>
+				</div> 
 			</div>
 		</div>
 		<div id="liste">
@@ -281,6 +283,9 @@
 				<video width="100%" height="auto" onclick="this.paused ? this.play() : this.pause();" muted>
 					<source src="VideoOuestFrancais.mp4" type="video/mp4">
 				</video>
+				<div id="3">
+					<h1>Cliquez pour lancer !</h1>
+				</div> 
 			</div>
 		</div>
 
@@ -289,8 +294,6 @@
 </body>
 <script>
 	function printPage(page) {
-
-		oldPage = location.hash.substr(1);
 		var list = $("section");
 		for (let item of list) {
 			$(item).attr('class', 'inactive');
@@ -298,12 +301,23 @@
 		if (page == "competence") animationCercle();
 		$('#' + page).attr('class', 'active container');
 	}
+	function showTexte(id){
+		ele = document.getElementById(id);
+		$(ele).attr('class', 'active')
+	}
+	function hideTexte(id){
+		ele = document.getElementById(id);
+		$(ele).attr('class', 'inactive')
+	}
 
 </script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
 	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 <script>
+	$('video').click(
+		function(){id = $(this).parent().find("div")[0].id, console.log(id),this.paused? showTexte(id): hideTexte(id);});
+
 	function animationCercle() {
 		$(function () {
 			// Remove svg.radial-progress .complete inline styling
