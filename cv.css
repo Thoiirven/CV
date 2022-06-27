@@ -84,17 +84,6 @@
 
 }
 
-#gauche {
-	background-color: whitesmoke;
-}
-
-#droite {
-	top: 0px;
-	right: 0px;
-	height: 100%;
-	background-color: blue;
-}
-
 #titre {
 	margin: 0.2em;
 	font-size: 1.5em;
@@ -115,11 +104,11 @@
 #liste {
 	margin-top: 8px;
 	margin-bottom: 8px;
-	font-weight: bold;
+	font-weight: bolder;
 	background-color: rgb(3, 141, 81);
 	color: white;
 	text-align: center;
-	padding: 0;
+	padding: 10px;
 	border-radius: 4px;
 }
 
