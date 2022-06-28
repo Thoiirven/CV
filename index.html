@@ -272,7 +272,7 @@
 					<source src="VideoVirus.mp4" type="video/mp4">
 				</video>
 				<div id="2">
-					<h1>Cliquez pour lancer !</h1>
+					<h1 onclick="">Cliquez pour lancer !</h1>
 				</div>
 			</div>
 		</div>
@@ -338,13 +338,11 @@
 		element.forEach(function (ele) {
 			if (estPremier) {
 				ele2 = $(ele).find("h2")[0];
-				console.log($(ele2).parent())
 				divListe = ele.querySelectorAll("div");
 				var estVisible = false
 				if (isElementInViewport(ele)) {
 					$(ele2).parent().css("position", "relative", "top", " ");
 					estPremier = true
-					console.log("The paragraph  is visible.");
 				} else {
 					divListe.forEach(function (d) {
 						if (isElementInViewport(d)) estVisible = true;
@@ -359,19 +357,12 @@
 				}
 			}
 		});
-
-		// if (document.documentElement.scrollTop > 200 &&document.documentElement.scrollTop < 900) {
-		// 	$(element).css("position","fixed","top", "-100px");
-		// 	console.log("eeee")
-		// }
-		// else {
-		// 	console.log("aaj")
-		// 	$(element).css("position","relative","top", "none");
-		// }
 	}
 	$('video').click(
-		function () { id = $(this).parent().find("div")[0].id, console.log(id), this.paused ? showTexte(id) : hideTexte(id); });
-
+		function () { id = $(this).parent().find("div")[0].id, this.paused ? showTexte(id) : hideTexte(id); });
+	$('video').parent().find("h1").click(
+		function () { $(this).parent().parent().find("video")[0].play(),id = $(this).parent()[0].id,$(this).parent().parent().find("video")[0].paused ? showTexte(id):hideTexte(id);  }
+	);
 	function animationCercle() {
 		$(function () {
 			// Remove svg.radial-progress .complete inline styling
