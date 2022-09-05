@@ -258,7 +258,7 @@ svg.radial-progress:nth-of-type(6n+8) circle {
 /* Partie du home */
 
 #left>p {
-	color: rgb(209, 209, 209);
+	color: black;
 	line-height: 1.5em;
 }
 
