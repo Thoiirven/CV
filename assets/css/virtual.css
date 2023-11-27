@@ -1516,4 +1516,10 @@ margin-top: 20px;
     grid-template-columns: repeat(2, 1fr);
 }
 }
+@media screen and (max-width: 600px) {
+    .popup-content {
+      width: 90%; /* Taille spécifique lorsque l'écran est plus petit que 600px */
+      /* Autres styles spécifiques pour les écrans plus petits */
+    }
+  }
   
