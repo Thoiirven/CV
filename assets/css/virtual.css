@@ -1468,19 +1468,17 @@ position: relative;
 }
 
 .item img {
-width: 100%;
-height: auto;
+max-height: 50%;
 cursor: pointer;
 }
 
 /* Style pour les pop-ups */
 .popup {
+z-index: 999;
 display: none;
 position: fixed;
 top: 0;
 left: 0;
-width: 100%;
-height: 100%;
 background-color: rgba(0, 0, 0, 0.7);
 justify-content: center;
 align-items: center;
@@ -1488,8 +1486,7 @@ align-items: center;
 
 .popup-content {
 position: relative;
-width: 50%;
-height: auto;
+width: 40%;
 background-color: #fff;
 padding: 20px;
 text-align: center;
